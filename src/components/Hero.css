@@ -1,0 +1,31 @@
+.hero-banner {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  max-width: 100%; 
+  max-height: none;
+}
+
+@media (min-width: 768px) {
+  .hero-banner img {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-banner img {
+    width: 100%;
+    border-radius: 0;
+  }
+}
