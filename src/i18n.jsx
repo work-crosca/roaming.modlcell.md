@@ -35,6 +35,7 @@ i18n.use(initReactI18next).init({
             link: "https://www.moldcell.md/rom/private/asistenta/moldcell-offices",
           },
         },
+        copyright: "© {{year}} Moldcell. Toate drepturile rezervate.",
         faq: {
           title: "Întrebări frecvente",
           items: [
@@ -246,6 +247,7 @@ i18n.use(initReactI18next).init({
             link: "https://www.moldcell.md/rus/private/pomoshi/moldcell-offices",
           },
         },
+        copyright: "© {{year}} Moldcell. Все права защищены.",
         faq: {
           title: "Частые вопросы",
           items: [
