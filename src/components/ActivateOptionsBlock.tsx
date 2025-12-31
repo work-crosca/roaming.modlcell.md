@@ -55,7 +55,7 @@ const ActivateOptionsBlock: React.FC = () => {
       buttonKey: "activateBlock.code.btn",
       onClick: async () => {
         const { isMobile } = detectPlatform();
-        const ussdText = (t("activateBlock.code.btn") as string) || "*222*4*3#";
+        const ussdText = (t("activateBlock.code.btn") as string) || "*222*1#";
 
         if (isMobile) {
           // encode * și #

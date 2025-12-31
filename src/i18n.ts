@@ -44,7 +44,7 @@ i18n.use(initReactI18next).init({
           code: {
             title: "Mai multe opțiuni",
             desc: "direct din telefon",
-            btn: "*222*4*3#",
+            btn: "*222*1#",
           },
           pay: {
             title: "Reîncărcare online",
@@ -280,7 +280,7 @@ i18n.use(initReactI18next).init({
           code: {
             title: "Больше опций",
             desc: "прямо на телефоне",
-            btn: "*222*4*3#",
+            btn: "*222*1#",
           },
           pay: {
             title: "Пополнение онлайн",
