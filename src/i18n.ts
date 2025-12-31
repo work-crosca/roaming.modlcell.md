@@ -29,7 +29,7 @@ i18n.use(initReactI18next).init({
           },
           copyright: "© {{year}} Moldcell. Toate drepturile rezervate.",
         },
-        heroText: "Planifici o vacanță, city-break sau o deplasare peste hotare? Oriunde ai pleca în Uniunea Europeană sau în țările Spațiului Economic European (SEE).",
+        heroText: "Planifici o vacanță, city-break sau o deplasare peste hotare? Oriunde ai pleca în Uniunea Europeană sau în țările Spațiului Economic European (SEE), rămâi conectat cu Moldcell.",
         activateBlock: {
           title: "Mereu util",
           app: {
@@ -263,9 +263,9 @@ i18n.use(initReactI18next).init({
           copyright: "© {{year}} Moldcell. Все права защищены.",
         },
         tabTitleEU: "Роуминг в ЕС",
-        metaDescription: "Куда бы вы ни отправились, в Европейский Союз или в страны Европейской Экономической Зоны (ЕЭЗ).",
+        metaDescription: "Куда бы вы ни отправились, в Европейский Союз или в страны Европейской Экономической Зоны (ЕЭЗ), оставайтесь на связи с Moldcell.",
         heroText:
-          "Планируете отпуск или деловую поездку за границу? Куда бы вы ни отправились, в Европейский Союз или в страны Европейской Экономической Зоны (ЕЭЗ).",
+          "Планируете отпуск или деловую поездку за границу? Куда бы вы ни отправились, в Европейский Союз или в страны Европейской Экономической Зоны (ЕЭЗ), оставайтесь на связи с Moldcell.",
         activateBlock: {
           title: "Всегда полезно",
           app: {
