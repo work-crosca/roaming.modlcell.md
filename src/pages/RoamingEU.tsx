@@ -10,7 +10,18 @@ const RoamingEU: React.FC = () => {
 
   useEffect(() => {
     const key = i18n.language.split("-")[0] as "ro" | "ru";
+
+    // set tab title
     document.title = t("tabTitleEU", { lng: key });
+
+    // set meta description
+    let meta = document.querySelector('meta[name="description"]');
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.setAttribute("name", "description");
+      document.head.appendChild(meta);
+    }
+    meta.setAttribute("content", t("metaDescription", { lng: key }));
   }, [i18n.language, t]);
 
   return (
