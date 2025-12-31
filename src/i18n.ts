@@ -1,4 +1,4 @@
-import i18n, { t } from "i18next";
+import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import Pdf1 from "./assets/files/Conditii_de_utlizare_a_serviciilor_roaming.pdf";
 import Pdf2 from "./assets/files/Numere_de_urgenta_in_tarile_UE.pdf";
