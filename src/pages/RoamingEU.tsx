@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Hero from "../components/Hero";
-import ActivateOptionsBlock from "../components/ActivateOptionsBlock";
 import FaqAccordion from "../components/FaqAccordion";
+import RoamingOptionsTable from "../components/RoamingOptionsTable";
 import "./RoamingEU.css";
 
 const RoamingEU: React.FC = () => {
@@ -33,7 +33,7 @@ const RoamingEU: React.FC = () => {
       <div className="hero-text-block">
         <p>{t("heroText")}</p>
       </div>
-      <ActivateOptionsBlock />
+      <RoamingOptionsTable />
       <FaqAccordion />
     </div>
   );

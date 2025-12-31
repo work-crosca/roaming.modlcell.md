@@ -1,0 +1,130 @@
+/* src/components/RoamingOptionsTable.css */
+.rot {
+  width: 100%;
+  padding: 22px 16px;
+}
+
+.rot__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rot__title {
+  margin: 0 0 14px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: #990ae3;
+}
+
+.rot__tableWrap {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.rot__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.rot__table thead th {
+  text-align: left;
+  padding: 12px 12px;
+  font-weight: regular;
+  color: #990ae3;
+  background: #fafafa;
+}
+
+.rot__table tbody td {
+  padding: 12px 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  color: rgba(51, 51, 51, 0.9);
+}
+
+.rot__table tbody tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+.rot__opt {
+  font-weight: regular;
+  color: #333;
+}
+
+.rot__muted {
+  color: rgba(51, 51, 51, 0.78);
+}
+
+.rot__methods {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rot__methodLink {
+  color: #990ae3;
+  font-weight: regular;
+  text-decoration: none;
+}
+
+.rot__methodLink:hover {
+  text-decoration: underline;
+}
+
+.rot__methodLink:focus-visible {
+  outline: 3px solid rgba(153, 10, 227, 0.22);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.rot__methodText {
+  font-weight: regular;
+  color: #333;
+  white-space: nowrap;
+}
+
+.rot_methodSep {
+  font-weight: 300;
+  color: #666;
+  user-select: none;
+}
+
+.rot__note {
+  margin: 10px 0 0;
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .rot {
+    padding: 26px 24px;
+  }
+
+  .rot__title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .rot__table {
+    font-size: 14px;
+  }
+
+  .rot__table thead th,
+  .rot__table tbody td {
+    padding: 14px 16px;
+  }
+}
+
+@media (max-width: 740px) {
+  /* scroll orizontal pe mobil */
+  .rot__tableWrap {
+    overflow-x: auto;
+  }
+  .rot__table {
+    min-width: 720px;
+  }
+}
