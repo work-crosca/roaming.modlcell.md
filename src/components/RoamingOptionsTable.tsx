@@ -13,7 +13,11 @@ type OptionRow = {
   methods: ActivateMethod[];
 };
 
-const isMobileUA = () => /Android|iPhone|iPad|iPod/i.test(navigator.userAgent || "");
+const ua = () => navigator.userAgent || "";
+
+const isMobileUA = () => /Android|iPhone|iPad|iPod/i.test(ua());
+const isIOS = () => /iPhone|iPad|iPod/i.test(ua());
+const isAndroid = () => /Android/i.test(ua());
 
 const RoamingOptionsTable: React.FC = () => {
   const { t } = useTranslation();
@@ -24,6 +28,22 @@ const RoamingOptionsTable: React.FC = () => {
     { nameKey: "internet_10gb", price: "90", validityKey: "days_30", euTraffic: "7.10 GB", methods: ["app", "or", "code"] },
     { nameKey: "sms_100", price: "50", validityKey: "days_30", euTraffic: "100 SMS", methods: ["app", "or", "code"] },
   ];
+
+  const getMyMoldcellHref = () => {
+    const mobile = isMobileUA();
+
+    const linkIOS = String(t("activateBlock.app.link_ios") || "");
+    const linkAndroid = String(t("activateBlock.app.link_android") || "");
+    const linkDesktop = String(t("activateBlock.app.link_desktop") || "");
+
+    if (!mobile) return linkDesktop;
+
+    if (isIOS() && linkIOS) return linkIOS;
+    if (isAndroid() && linkAndroid) return linkAndroid;
+
+    // fallback (tablete/UA dubios)
+    return linkDesktop || linkIOS || linkAndroid || "#";
+  };
 
   const onClickUssd = async () => {
     const ussdText = String(t("activateBlock.code.btn") || "*222*1#");
@@ -48,12 +68,14 @@ const RoamingOptionsTable: React.FC = () => {
     const ussdText = String(t("activateBlock.code.btn") || "*222*1#");
     const telHref = `tel:${encodeURIComponent(ussdText)}`;
 
+    const appHref = getMyMoldcellHref();
+
     return (
       <div className="rot__methods">
         {methods.includes("app") && (
           <a
             className="rot__methodText"
-            href={String(t("activateBlock.app.link_desktop"))}
+            href={appHref}
             target="_blank"
             rel="noopener noreferrer"
             title={String(t("activateBlock.app.title"))}
