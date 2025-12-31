@@ -79,7 +79,7 @@ i18n.use(initReactI18next).init({
 
         copyright: "© {{year}} Moldcell. Toate drepturile rezervate.",
         faq: {
-          title: "Întrebări frecvente",
+          title: "Condiții de utilizare în roaming UE – esențial de știut",
           items: [
             {
               q: "Condiții de utilizare Opțiuni Internet și SMS",
@@ -409,7 +409,7 @@ i18n.use(initReactI18next).init({
         },
         copyright: "© {{year}} Moldcell. Все права защищены.",
         faq: {
-          title: "Частые вопросы",
+          title: "Условия использования роуминга в ЕС – важно знать",
           items: [
             {
               q: "Условия использования Интернет Опций и СМС",
