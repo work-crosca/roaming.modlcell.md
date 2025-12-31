@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
-import i18n from "./i18n.jsx";
+import i18n from "./i18n";
 
 const SUPPORTED_LANGS = ["ro", "ru"] as const;
 type SupportedLang = (typeof SUPPORTED_LANGS)[number];
