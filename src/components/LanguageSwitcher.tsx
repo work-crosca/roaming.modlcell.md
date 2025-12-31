@@ -1,13 +1,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-type Lang = "ro" | "ru";
+type Lang = "ro" | "ru"; 
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
 
-  // i18next uneori vine cu "ro-RO", "ru-RU" etc.
-  const current = (i18n.language?.split("-")[0] as Lang) || "ro";
+  const current: Lang = (i18n.language?.split("-")[0] as Lang) || "ro";
 
   const setLang = (lang: Lang) => {
     i18n.changeLanguage(lang);
