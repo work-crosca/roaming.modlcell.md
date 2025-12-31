@@ -1,27 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import {
-  FaInstagram,
-  FaTiktok,
-  FaFacebook,
-  FaYoutube,
-  FaTelegramPlane,
-  FaGlobe,
-} from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaFacebook, FaYoutube, FaTelegramPlane, FaGlobe } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
   const year = new Date().getFullYear();
-
-  const followLinks = {
-    instagram: "https://instagram.com/moldcell",
-    tiktok: "https://tiktok.com/@moldcell",
-    facebook: "https://facebook.com/moldcell.md",
-    youtube: "https://youtube.com/@MoldcellOfficial",
-    telegram: "https://t.me/moldcell",
-    website: "https://moldcell.md",
-  };
 
   return (
     <footer className="footer">
@@ -29,35 +13,48 @@ const Footer: React.FC = () => {
         {/* Contacte */}
         <div className="footer__col">
           <h3 className="footer__heading">{t("footer.contacts.title")}</h3>
-          <p className="footer__item">{t("footer.contacts.emailLabel")} <a href="mailto:moldcell@moldcell.md">{t("footer.contacts.email")}</a></p>
-          <p className="footer__item">{t("footer.contacts.phoneLabel")} <a href="tel:+37378500500">{t("footer.contacts.phone")}</a></p>
+
+          <p className="footer__item">
+            {t("footer.contacts.emailLabel")}{" "}
+            <a href={`mailto:${t("footer.contacts.email")}`} target="_blank" rel="noopener noreferrer">
+              {t("footer.contacts.email")}
+            </a>
+          </p>
+
+          <p className="footer__item">
+            {t("footer.contacts.phoneLabel")}{" "}
+            <a href={`tel:${t("footer.contacts.phone")}`} target="_blank" rel="noopener noreferrer">
+              {t("footer.contacts.phone")}
+            </a>
+          </p>
         </div>
 
         {/* Follow us */}
         <div className="footer__col">
           <h3 className="footer__heading">{t("footer.follow.title")}</h3>
+
           <div className="footer__socials">
-            <a href={followLinks.instagram} className="footer__iconLink">
+            <a href={t("footer.follow.instagram")} className="footer__iconLink" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
 
-            <a href={followLinks.tiktok} className="footer__iconLink">
+            <a href={t("footer.follow.tiktok")} className="footer__iconLink" target="_blank" rel="noopener noreferrer">
               <FaTiktok />
             </a>
 
-            <a href={followLinks.facebook} className="footer__iconLink">
+            <a href={t("footer.follow.facebook")} className="footer__iconLink" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
 
-            <a href={followLinks.youtube} className="footer__iconLink">
+            <a href={t("footer.follow.youtube")} className="footer__iconLink" target="_blank" rel="noopener noreferrer">
               <FaYoutube />
             </a>
 
-            <a href={followLinks.telegram} className="footer__iconLink">
+            <a href={t("footer.follow.telegram")} className="footer__iconLink" target="_blank" rel="noopener noreferrer">
               <FaTelegramPlane />
             </a>
 
-            <a href={followLinks.website} className="footer__iconLink">
+            <a href={t("footer.follow.website")} className="footer__iconLink" target="_blank" rel="noopener noreferrer">
               <FaGlobe />
             </a>
           </div>
