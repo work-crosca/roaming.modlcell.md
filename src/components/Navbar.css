@@ -16,16 +16,44 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 10px 12px;
+}
+
+/* grid 2 coloane */
+.navGrid {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.navCol {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.navLogoCol {
+  justify-content: flex-start;
+}
+
+.navSwitcherCol {
   justify-content: flex-end;
 }
 
-.navRight {
-  display: flex;
+/* logo */
+.navLogoLink {
+  display: inline-flex;
   align-items: center;
+  text-decoration: none;
 }
 
+.navLogo {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
+/* existing language switcher */
 .langSwitch {
   display: inline-flex;
   gap: 6px;
@@ -66,6 +94,10 @@
     padding: 12px 16px;
   }
 
+  .navLogo {
+    height: 36px;
+  }
+
   .langBtn {
     padding: 9px 12px;
     font-size: 13px;
@@ -75,6 +107,10 @@
 @media (min-width: 1024px) {
   .navInner {
     padding: 14px 16px;
+  }
+
+  .navLogo {
+    height: 38px;
   }
 
   .langBtn {
