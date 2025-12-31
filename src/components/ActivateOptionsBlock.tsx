@@ -4,7 +4,7 @@ import "./ActivateOptionsBlock.css";
 
 import iconApp from "../assets/icons/my-moldcell.svg";
 import iconCode from "../assets/icons/code.svg";
-import iconStore from "../assets/icons/store.svg";
+import iconPay from "../assets/icons/top-up.svg";
 
 type ActionItem = {
   key: string;
@@ -74,12 +74,12 @@ const ActivateOptionsBlock: React.FC = () => {
       iconSrc: iconCode,
     },
     {
-      key: "store",
-      titleKey: "activateBlock.store.title",
-      descKey: "activateBlock.store.desc",
-      buttonKey: "activateBlock.store.btn",
-      href: t("activateBlock.store.link") as string,
-      iconSrc: iconStore,
+      key: "pay",
+      titleKey: "activateBlock.pay.title",
+      descKey: "activateBlock.pay.desc",
+      buttonKey: "activateBlock.pay.btn",
+      href: t("activateBlock.pay.link") as string,
+      iconSrc: iconPay,
     },
   ];
 

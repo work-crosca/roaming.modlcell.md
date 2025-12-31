@@ -31,10 +31,10 @@ i18n.use(initReactI18next).init({
         heroText:
           "Planifici o vacanță, city-break sau o deplasare peste hotare? Oriunde ai pleca în Uniunea Europeană sau în țările Spațiului Economic European (SEE), rămâi conectat cu Moldcell.",
         activateBlock: {
-          title: "Activează opțiunea super simplu",
+          title: "Mereu util",
           app: {
             title: "my moldcell",
-            desc: "direct din aplicație",
+            desc: "gestionează-ți numărul din aplicație",
             btn: "Descarcă aplicația",
             link_ios: "https://apps.apple.com/app/id1263419464",
             link_android:
@@ -42,15 +42,15 @@ i18n.use(initReactI18next).init({
             link_desktop: "https://www.moldcell.md/rom/my-moldcell",
           },
           code: {
-            title: "Formează codul",
+            title: "Mai multe opțiuni",
             desc: "direct din telefon",
             btn: "*222*4*3#",
           },
-          store: {
-            title: "Magazine Moldcell",
-            desc: "te ajutăm în magazin",
-            btn: "Vezi oficiile",
-            link: "https://www.moldcell.md/rom/private/asistenta/moldcell-offices",
+          pay: {
+            title: "Reîncărcare online",
+            desc: "din orice colț al lumii",
+            btn: "Reîncarcă",
+            link: "https://reincarcare.moldcell.md/",
           },
         },
 
@@ -247,7 +247,7 @@ i18n.use(initReactI18next).init({
           contacts: {
             title: "Контакты",
             email: "moldcell@moldcell.md",
-            emailLabel: "Email:",
+            emailLabel: "Эл. почта:",
             phoneLabel: "Тел:",
             phone: "+373 78 500 500",
           },
@@ -266,10 +266,10 @@ i18n.use(initReactI18next).init({
         heroText:
           "Планируешь отпуск, city-break или поездку за границу? Где бы ты ни был в Европейском Союзе или странах Европейского экономического пространства (ЕЭП), оставайся на связи с Moldcell.",
         activateBlock: {
-          title: "Активируй опцию очень просто",
+          title: "Всегда полезно",
           app: {
             title: "my moldcell",
-            desc: "прямо в приложении",
+            desc: "управляйте номером из приложения",
             btn: "Скачать приложение",
             link_ios: "https://apps.apple.com/app/id1263419464",
             link_android:
@@ -277,15 +277,15 @@ i18n.use(initReactI18next).init({
             link_desktop: "https://www.moldcell.md/rus/my-moldcell",
           },
           code: {
-            title: "Набери код",
+            title: "Больше опций",
             desc: "прямо на телефоне",
             btn: "*222*4*3#",
           },
-          store: {
-            title: "Офисы Moldcell",
-            desc: "поможем в офисе",
-            btn: "Найти офис",
-            link: "https://www.moldcell.md/rus/private/pomoshi/moldcell-offices",
+          pay: {
+            title: "Пополнение онлайн",
+            desc: "из любой точки мира",
+            btn: "Пополнить",
+            link: "https://reincarcare.moldcell.md/",
           },
         },
         copyright: "© {{year}} Moldcell. Все права защищены.",
