@@ -31,8 +31,13 @@ const RoamingEU: React.FC = () => {
       </section>
 
       <div className="hero-text-block">
-        <p>{t("heroText")}</p>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: t("heroText").replace(/\n/g, "<br/>"),
+          }}
+        />
       </div>
+
       <RoamingOptionsTable />
       <FaqAccordion />
     </div>
