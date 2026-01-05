@@ -61,7 +61,7 @@ i18n.use(initReactI18next).init({
             btn: "Descarcă aplicația",
             link_ios: "https://apps.apple.com/app/id1263419464",
             link_android:
-              "https://play.google.com/store/apps/details?id=md.moldcell.app",
+              "https://play.google.com/store/apps/details?id=md.moldcell.selfservice",
             link_desktop: "https://www.moldcell.md/rom/my-moldcell",
           },
           code: {
@@ -278,7 +278,10 @@ i18n.use(initReactI18next).init({
                       link: Pdf1,
                     },
                   },
-                ],
+                    { text: '<strong>Volum date roaming UE (GB):</strong>\nOfertele cu Roaming UE inclus permit utilizarea unei părți din internet național și în roaming în țările UE, în limita volumului de date calculat conform formulei stabilite de reglementările UE:' },
+                    { text: '<strong>Volum date roaming UE (GB)</strong> = 2 × Taxa lunară a abonamentului (fără TVA, în EUR) / Tariful reglementat pentru date în roaming cu ridicata (1,1 EUR/GB).' },
+                    { text: '<i> Exemplu de calcul – Abonamentul Lumo 220:</i> Taxa lunară: 220 lei. Dublarea taxei lunare: 220 × 2 = 440 lei. Conversie în euro (la cursul 1 EUR = 19,38 lei): 440 / 19,38 = 22,70 EUR (cu TVA). Excluderea TVA (20%): 22,70 / 1,20 = 18,91 EUR (fără TVA). Calculul volumului de date roaming UE: 18,91 / 1,1 = 17,19 GB (rotunjit: 17,2 GB) Rezultat final: Pentru Abonamentul Lumo 220, limita reglementată de internet disponibil în roaming UE este de 17,2 GB.' },
+                  ],
               },
             },
 
@@ -392,7 +395,7 @@ i18n.use(initReactI18next).init({
             btn: "Скачать приложение",
             link_ios: "https://apps.apple.com/app/id1263419464",
             link_android:
-              "https://play.google.com/store/apps/details?id=md.moldcell.app",
+              "https://play.google.com/store/apps/details?id=md.moldcell.selfservice",
             link_desktop: "https://www.moldcell.md/rus/my-moldcell",
           },
           code: {
@@ -611,6 +614,11 @@ i18n.use(initReactI18next).init({
                       link: Pdf1,
                     },
                   },
+                  
+                    { text: '<strong>Объём интернет-трафика в роуминге ЕС (GB):</strong>\nТарифные планы с включённым роумингом в ЕС позволяют использовать часть национального интернет-трафика также и в роуминге в странах ЕС, в пределах объёма данных, рассчитанного согласно формуле, установленной регламентами ЕС:'},
+                    { text: '<strong>Объём интернет-трафика в роуминге ЕС (GB)</strong> = 2 × ежемесячная абонентская плата (без НДС, в EUR) / регулируемый оптовый тариф на интернет в роуминге (1,1 EUR/GB).' },
+                    { text: '<i>Пример расчёта – Абонемент Lumo 220:</i> Ежемесячная плата: 220 лей. Удвоение ежемесячной платы: 220 × 2 = 440 лей. Конвертация в евро (по курсу 1 EUR = 19,38 лея): 440 / 19,38 = 22,70 EUR (с НДС). Исключение НДС (20%): 22,70 / 1,20 = 18,91 EUR (без НДС). Расчёт объёма интернет-трафика в роуминге ЕС: 18,91 / 1,1 = 17,19 GB (округлено: 17,2 GB). Итоговый результат: Для Абонемента Lumo 220 регламентированный лимит интернет-трафика, доступного в роуминге в ЕС, составляет 17,2 GB.' },
+                  
                 ],
               },
             },
